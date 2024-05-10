@@ -64,33 +64,18 @@ const AboutMe = () => {
         </div>
         <div className="flex justify-between gap-10 sm:flex-col mx-20 md:flex-col">
             <div className="flex flex-col gap-10 w-fit bg-slate-400 px-5 py-5 rounded-[30px]">
-              <img
-              src="muslim.jpg"
-              alt="First"
-              className="self-center rounded-[50%] w-16 h-16"
-              />
               <p>
               Your attention to detail and commitment to quality coding are truly impressive. It&apos;s evident that you take pride in your work
               </p>
               <p className="text-end text-[20px]">Fatima Mohammed</p>
             </div>
             <div className="flex flex-col gap-10 w-fit bg-slate-400 px-5 py-5 rounded-[30px]">
-              <img
-              src=""
-              alt="First"
-              className="self-center rounded-[50%]"
-              />
               <p>
               Your attention to detail in your code is quite noticeable. It really helps in ensuring the quality of our projects
               </p>
               <p className="text-end text-[20px]">Mulugeta Girma</p>
             </div>
             <div className="flex flex-col gap-10 w-fit bg-slate-400 px-5 py-5 rounded-[30px]">
-              <img
-              src=""
-              alt="First"
-              className="self-center rounded-[50%]"
-              />
               <p>
               Your communication about technical matters is clear and concise, making collaboration smoother for everyone.
               </p>
@@ -99,22 +84,12 @@ const AboutMe = () => {
           </div>
           <div className="flex justify-between my-20 mx-20 gap-10 sm:flex-col">
           <div className="flex flex-col gap-10 w-fit bg-slate-400 px-5 py-5 rounded-[30px]">
-              <img
-              src=""
-              alt="First"
-              className="self-center rounded-[50%]"
-              />
               <p>
               Meeting deadlines is a critical aspect of our work, and I&apos;m pleased to see your consistent effort in delivering your work on time. Your reliability in this regard not only helps us stay on track with our project timelines but also instills confidence in our clients and stakeholders about our ability to execute effectively
               </p>
               <p className="text-end text-[20px]">Sarah Johnson</p>
             </div>
             <div className="flex flex-col gap-10 w-fit bg-slate-400 px-5 py-5 rounded-[30px]">
-              <img
-              src="david.webp"
-              alt="First"
-              className="self-center rounded-[50%] w-16 h-16"
-              />
               <p>
               It&apos;s refreshing to see your enthusiasm for learning and adopting new technologies. The tech landscape is constantly evolving, and your willingness to stay updated with the latest trends and advancements keeps our team agile and competitive. Your proactive approach to self-improvement sets a positive example for your colleagues and contributes to our collective growth
               </p>

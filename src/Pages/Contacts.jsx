@@ -15,8 +15,8 @@ const Contacts = () => {
      name == null || email == null || message == null ? 
      alert('Please enter your valid informations') :
       emailjs.send(
-        'service_oynbrru',
-        'template_qi1g6up',
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
         {
           from_name: name,
           to_name: 'Abdurehman',
@@ -24,7 +24,7 @@ const Contacts = () => {
           to_email: 'abdurehmanali611@gmail.com',
           message: message
         },
-        'cD4suSdgcydTFKbkH'
+        import.meta.env.VITE_PUBLIC_KEY
       )
       .then((res) => alert('You have sent the Email successfully', res.status))
       .catch(err => alert(err.message))
