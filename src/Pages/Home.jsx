@@ -20,7 +20,7 @@ const Home = () => {
           </div>
           <div className="flex md:self-center">
             <img 
-            src="/abdu_wow.jpg"
+            src="/abdu_wow2.jpg"
             alt="my photo"
             className="w-96 h-[350px] rounded-[50%]"
             />

@@ -22,10 +22,10 @@ const Navbar = () => {
             </div>
             <div className="m-5">
                 {!middle ? (
-                <ul className="flex gap-5">
-                    <li className="bg-slate-200 w-24 h-12 text-center pt-2 rounded-[15px] text-orange-800 hover:text-green-700 hover:bg-white md:hidden sm:hidden" ><Link to='about'>About Me</Link></li>
-                    <li className="bg-slate-200 w-24 h-12 text-center pt-2 rounded-[15px] text-orange-800 hover:text-green-700 hover:bg-white md:hidden sm:hidden"><Link to='portfolio'>PortFolio</Link></li>
-                    <li className="bg-slate-400 w-24 h-12 text-center pt-2 rounded-[15px] text-purple-600 hover:text-green-700 hover:bg-white md:hidden sm:hidden"><Link to='contact'>Contact</Link></li>
+                <ul className="flex gap-8 justify-center">
+                    <li className="text-blue-800 hover:text-red-600 md:hidden sm:hidden bg-slate-300 p-1 rounded-lg flex justify-center items-center hover:bg-white"  ><Link className = "text-xl" to='about'>About Me</Link></li>
+                    <li className="text-blue-800 hover:text-red-600 md:hidden sm:hidden bg-slate-300 p-1 rounded-lg flex justify-center items-center hover:bg-white"><Link className = "text-xl" to='portfolio'>PortFolio</Link></li>
+                    <li className="text-blue-800 hover:text-red-600 md:hidden sm:hidden bg-slate-300 p-1 rounded-lg flex justify-center items-center hover:bg-white"><Link className = "text-[22px]" to='contact'>Contact</Link></li>
                     <li>
                     <Link onClick={menuElements}
                     className="hidden md:block sm:block">
@@ -50,9 +50,9 @@ const Navbar = () => {
                              />
                             </Link>
                         </li>
-                        <li className="bg-slate-200 w-24 h-12 text-center pt-2 rounded-[15px] text-orange-800 hover:text-green-700 hover:bg-white flex justify-center self-center" onClick={menuElements}><Link to='about'>About Me</Link></li>
-                        <li className="bg-slate-200 w-24 h-12 text-center pt-2 rounded-[15px] text-orange-800 hover:text-green-700 hover:bg-white flex justify-center self-center" onClick={menuElements}><Link to='portfolio'>PortFolio</Link></li>
-                        <li className="bg-slate-200 w-24 h-12 text-center pt-2 rounded-[15px] text-orange-800 hover:text-green-700 hover:bg-white flex justify-center self-center" onClick={menuElements}><Link to='contact'>Contact</Link></li>
+                        <li className="bg-slate-200 w-24 h-12 text-center pt-2 rounded-[15px] text-orange-800 hover:text-green-700 hover:bg-white md:block sm:block self-center"  onClick={menuElements}><Link to='about'>About Me</Link></li>
+                        <li className="bg-slate-200 w-24 h-12 text-center pt-2 rounded-[15px] text-orange-800 hover:text-green-700 hover:bg-white md:block sm:block self-center" onClick={menuElements}><Link to='portfolio'>PortFolio</Link></li>
+                        <li className="bg-slate-200 w-24 h-12 text-center pt-2 rounded-[15px] text-orange-800 hover:text-green-700 hover:bg-white md:block sm:block self-center" onClick={menuElements}><Link to='contact'>Contact</Link></li>
                     </ul>
                 )}
             </div>

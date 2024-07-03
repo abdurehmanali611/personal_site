@@ -7,8 +7,17 @@ const Contacts = () => {
   const [email, setEmail] = useState()
   const [message, setMessage] = useState()
 
-  const CVDownload = () => {
-
+  const CVDownload = (url) => {
+    try {
+        const aTag = document.createElement('a')
+      aTag.href = url
+      aTag.setAttribute("download", '/Web Developer Resume.pdf')
+      document.body.appendChild(aTag)
+      aTag.click()
+      aTag.remove()
+      } catch (error) {
+        console.log(error.message);
+      }
   }
 
   const sendingEmail = () => {

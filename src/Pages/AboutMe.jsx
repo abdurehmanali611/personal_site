@@ -1,5 +1,4 @@
 import ProgressBar from "@ramonak/react-progress-bar"
-import { Link } from "react-router-dom"
 
 const AboutMe = () => {
   return (
@@ -27,7 +26,6 @@ const AboutMe = () => {
                 in different aspects of web development, mobile application development and AI or python 
                 related issues so you can rely on me for your development and designing issues.
               </p>
-              <Link className="text-blue-700 hover:text-red-700" to='about'>Read More</Link>
             </div>
           </div>
         </div>
