@@ -14,7 +14,7 @@ const Navbar = () => {
         <div className="flex justify-between">
             <div className="flex gap-5 m-5 ">
                 <img 
-                src="/abdu.jpg"
+                src="/abdu_wow.jpg"
                 alt="Owner"
                 className="w-12 h-12 rounded-full"
                 />
@@ -23,9 +23,11 @@ const Navbar = () => {
             <div className="m-5">
                 {!middle ? (
                 <ul className="flex gap-8 justify-center">
-                    <li className="text-blue-800 hover:text-red-600 md:hidden sm:hidden bg-slate-300 p-1 rounded-lg flex justify-center items-center hover:bg-white"  ><Link className = "text-xl" to='about'>About Me</Link></li>
-                    <li className="text-blue-800 hover:text-red-600 md:hidden sm:hidden bg-slate-300 p-1 rounded-lg flex justify-center items-center hover:bg-white"><Link className = "text-xl" to='portfolio'>PortFolio</Link></li>
-                    <li className="text-blue-800 hover:text-red-600 md:hidden sm:hidden bg-slate-300 p-1 rounded-lg flex justify-center items-center hover:bg-white"><Link className = "text-[22px]" to='contact'>Contact</Link></li>
+                    <li className = "text-blue-700 hover:text-red-600 md:hidden sm:hidden capitalize flex items-center" ><Link className = "text-xl focus:text-red-800" to='/'>Home</Link></li>
+                    <li className="text-blue-700 hover:text-red-600 md:hidden sm:hidden capitalize flex items-center"  ><Link className = "text-xl focus:text-red-800" to='about'>About Me</Link></li>
+                    <li className="text-blue-700 hover:text-red-600 md:hidden sm:hidden capitalize flex items-center"><Link className = "text-xl focus:text-red-800" to='/service'>Services</Link></li>
+                    <li className="text-blue-700 hover:text-red-600 md:hidden sm:hidden capitalize flex items-center"><Link className = "text-xl focus:text-red-800" to='portfolio'>PortFolio</Link></li>
+                    <li className="text-blue-700 hover:text-red-600 md:hidden sm:hidden capitalize flex items-center"><Link className = "text-[22px] focus:text-red-800" to='contact'>Contact</Link></li>
                     <li>
                     <Link onClick={menuElements}
                     className="hidden md:block sm:block">
@@ -38,7 +40,7 @@ const Navbar = () => {
                     </li>
                 </ul>
                 ): (
-                    <ul className="flex flex-col gap-10 bg-gray-400 w-48 h-96 py-5 rounded-[20px] absolute z-10 right-3">
+                    <ul className="flex flex-col gap-10 bg-gray-400 w-56 h-[420px] py-5 rounded-[20px] absolute z-10 right-3">
                         <li>
                             <Link 
                             className="flex justify-end"
@@ -50,9 +52,10 @@ const Navbar = () => {
                              />
                             </Link>
                         </li>
-                        <li className="bg-slate-200 w-24 h-12 text-center pt-2 rounded-[15px] text-orange-800 hover:text-green-700 hover:bg-white md:block sm:block self-center"  onClick={menuElements}><Link to='about'>About Me</Link></li>
-                        <li className="bg-slate-200 w-24 h-12 text-center pt-2 rounded-[15px] text-orange-800 hover:text-green-700 hover:bg-white md:block sm:block self-center" onClick={menuElements}><Link to='portfolio'>PortFolio</Link></li>
-                        <li className="bg-slate-200 w-24 h-12 text-center pt-2 rounded-[15px] text-orange-800 hover:text-green-700 hover:bg-white md:block sm:block self-center" onClick={menuElements}><Link to='contact'>Contact</Link></li>
+                        <li className="bg-slate-200 w-24 h-12 text-center p-2 rounded-[15px] text-orange-800 hover:text-green-700 hover:bg-white md:block sm:block self-center"  onClick={menuElements}><Link to='about'>About Me</Link></li>
+                        <li className="bg-slate-200 w-24 h-12 text-center p-2 rounded-[15px] text-orange-800 hover:text-green-700 hover:bg-white md:block sm:block self-center" onClick={menuElements}><Link to='service'>Services</Link></li>
+                        <li className="bg-slate-200 w-24 h-12 text-center p-2 rounded-[15px] text-orange-800 hover:text-green-700 hover:bg-white md:block sm:block self-center" onClick={menuElements}><Link to='portfolio'>PortFolio</Link></li>
+                        <li className="bg-slate-200 w-24 h-12 text-center p-2 rounded-[15px] text-orange-800 hover:text-green-700 hover:bg-white md:block sm:block self-center" onClick={menuElements}><Link to='contact'>Contact</Link></li>
                     </ul>
                 )}
             </div>

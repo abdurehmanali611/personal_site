@@ -31,9 +31,8 @@ const AboutMe = () => {
         </div>
         <div className="mx-20 my-10">
           <div className="flex justify-between md:flex-col md:gap-16 sm:flex-col sm:gap-16">
-            <div className="w-[40%] pt-8 md:w-full sm:w-full">
-              <header className="text-center text-[30px] my-10 italic">My skills</header>
-              <p className="text-[20px] font-serif">
+            <div className="w-[40%] pt-8 md:w-full sm:w-full flex items-center">
+              <p className="text-[20px] font-serif text-center">
                 I believe in the fact that learning never stops and 
                 i am interested in learning and acquiring new technological 
                 inventions and use them to help me develop my technical and 
@@ -41,17 +40,17 @@ const AboutMe = () => {
               </p>
             </div>
             <div className="flex flex-col gap-6">
-              <header className="text-center text-[30px] font-serif font-semibold">language or Framework</header>
-              <label className="flex flex-col gap-5">
-                <p className="text-[25px] font-sans ">React Native</p>
-              <ProgressBar completed={90} maxCompleted={100} width="400px" height="25px" />
+            <header className="text-center text-[30px] italic">My skills</header>
+            <label className="flex flex-col gap-5">
+                <p className="text-[25px] font-sans ">Mobile App development</p>
+              <ProgressBar completed={100} maxCompleted={100} width="400px" height="25px" />
               </label>
               <label className="flex flex-col gap-5">
-                <p className="text-[25px] font-sans ">React</p>
-              <ProgressBar completed={80} maxCompleted={100} width="400px" height="25px"/>
+                <p className="text-[25px] font-sans ">Website development</p>
+              <ProgressBar completed={90} maxCompleted={100} width="400px" height="25px"/>
               </label>
               <label className="flex flex-col gap-5">
-                <p className="text-[25px] font-sans ">Python</p>
+                <p className="text-[25px] font-sans ">Video Editing</p>
               <ProgressBar completed={60} maxCompleted={100} width="400px" height="25px"/>
               </label>
             </div>

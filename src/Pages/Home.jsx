@@ -13,16 +13,16 @@ const Home = () => {
             <img 
             src="/phone.png"
             alt="phone"
-            className="w-8 h-8 rounded-[20px]"
+            className="w-9 h-8 rounded-[20px]"
             />
             callMe:+251935000642
             </Link>
           </div>
           <div className="flex md:self-center">
             <img 
-            src="/abdu_wow2.jpg"
+            src="/abdu2.jpg"
             alt="my photo"
-            className="w-96 h-[350px] rounded-[50%]"
+            className="w-96 h-96 rounded-[50%]"
             />
           </div>
         </div>
@@ -72,9 +72,9 @@ const Home = () => {
           </div>
           <div className="flex justify-between mx-10 gap-10 sm:flex-col">
             <div className="w-1/3 bg-slate-300 h-fit p-4 rounded-[20px] sm:w-fit">
-              <header className="text-center text-[20px] font-serif font-bold my-5">UI/UX Design</header>
+              <header className="text-center text-[20px] font-serif font-bold my-5">Video Editing</header>
               <p>
-                An Effective UI/UX is what captures the attention and spreads 
+                An Efficient Video is what captures the attention and spreads 
                 a clear message. if you want to address those features in an innovative, 
                 neat and clear way. 
                 <br />
@@ -109,17 +109,17 @@ const Home = () => {
         <div className="m-16 p-5 sm:m-10">
           <div className="flex justify-between gap-20 md:flex-col">
             <div className="flex flex-col gap-6">
-              <header className="text-center text-[30px] font-serif font-semibold">language or Framework</header>
+              <header className="text-center text-[30px] font-serif font-semibold">Services</header>
               <label className="flex flex-col gap-5">
-                <p className="text-[25px] font-sans ">React Native</p>
-              <ProgressBar completed={90} maxCompleted={100} width="400px" height="25px" />
+                <p className="text-[25px] font-sans ">Mobile App development</p>
+              <ProgressBar completed={100} maxCompleted={100} width="400px" height="25px" />
               </label>
               <label className="flex flex-col gap-5">
-                <p className="text-[25px] font-sans ">React</p>
-              <ProgressBar completed={80} maxCompleted={100} width="400px" height="25px"/>
+                <p className="text-[25px] font-sans ">Website development</p>
+              <ProgressBar completed={90} maxCompleted={100} width="400px" height="25px"/>
               </label>
               <label className="flex flex-col gap-5">
-                <p className="text-[25px] font-sans ">Python</p>
+                <p className="text-[25px] font-sans ">Video Editing</p>
               <ProgressBar completed={60} maxCompleted={100} width="400px" height="25px"/>
               </label>
             </div>
