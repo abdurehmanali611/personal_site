@@ -6,19 +6,7 @@ const Contacts = () => {
   const [name, setName] = useState()
   const [email, setEmail] = useState()
   const [message, setMessage] = useState()
-
-  const CVDownload = (url) => {
-    try {
-        const aTag = document.createElement('a')
-      aTag.href = url
-      aTag.setAttribute("download", '/Web Developer Resume.pdf')
-      document.body.appendChild(aTag)
-      aTag.click()
-      aTag.remove()
-      } catch (error) {
-        console.log(error.message);
-      }
-  }
+  const [title, setTitle] = useState()
 
   const sendingEmail = () => {
      name == null || email == null || message == null ? 
@@ -31,6 +19,7 @@ const Contacts = () => {
           to_name: 'Abdurehman',
           from_email: email,
           to_email: 'abdurehmanali611@gmail.com',
+          title: title,
           message: message
         },
         import.meta.env.VITE_PUBLIC_KEY
@@ -45,55 +34,58 @@ const Contacts = () => {
           <p className="text-[75px] -rotate-12 sm:text-[53px] md:text-[60px]">&quot;There is A Gold Here: But Most people are not trained to see it&quot;</p>
         </div>
         <div className="mx-20 my-10">
-          <div className="flex justify-between md:flex-col md:gap-16 sm:flex-col sm:gap-16">
-            <div className="w-[40%] pt-8 md:w-full sm:w-full">
-              <header className="text-center text-[30px] my-10 italic">Send Me a Message</header>
-              <p className="text-[20px] font-serif">
-               whether you wish to discuss new ideas or have a project for me, 
-               simply fill the form and i will get back to you soon
-              </p>
-              <button
-              className="bg-red-300 w-32 h-12 rounded-[20px] my-5"
-              onClick={CVDownload}
-              >
-                Download CV
-              </button>
+          <div className="flex justify-between items-center gap-10">
+            <div className="flex items-center gap-3 w-1/2">
+              <h4 className="font-serif text-2xl font-semibold">Get In Touch with Me</h4>
+              <img src="/arrow.png" alt="arrow" className="w-12 h-12"/>
             </div>
-            <div className="w-[40%]">
+            <div className="flex flex-col items-center">
               <div
-              className="flex flex-col gap-10">
-                <label className="flex flex-col gap-4">
-                  <p>Full Name</p>
+              className="flex flex-col gap-10 items-center">
+                <label className="flex flex-col gap-4 font-serif text-xl">
+                  <p>Full Name:</p>
                   <input 
                   type="text"
                   placeholder="Your Full name"
                   required
-                  className="bg-purple-200 h-12 px-5 rounded-[20px] md:w-[500px] sm:w-[380px]"
+                  className="bg-purple-200 h-10 px-5 rounded-[20px] md:w-[500px] w-[350px] mx-5 font-mono"
                   autoFocus
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   />
                 </label>
-                <label className="flex flex-col gap-4">
-                  <p>Email</p>
+                <label className="flex flex-col gap-4 font-serif text-xl">
+                  <p>Email:</p>
                   <input 
                   type="text"
                   placeholder="Your Email Address"
                   required
-                  className="bg-orange-100 h-12 px-5 rounded-[20px] md:w-[500px] sm:w-[380px]"
+                  className="bg-purple-200 h-10 px-5 rounded-[20px] md:w-[500px] w-[350px] mx-5 font-mono"
                   autoFocus
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   />
                 </label>
-                <label className="flex flex-col gap-4">
-                  <p>Message</p>
+                <label className="flex flex-col gap-4 font-serif text-xl">
+                  <p>Title:</p>
+                  <input 
+                  type="text"
+                  placeholder="Title of your Message"
+                  required
+                  className="bg-purple-200 h-10 px-5 rounded-[20px] md:w-[500px] w-[350px] mx-5 font-mono"
+                  autoFocus
+                  value={title}
+                  onChange={(e) => setTitle(e.target.value)}
+                  />
+                </label>
+                <label className="flex flex-col gap-4 font-serif text-xl">
+                  <p>Message:</p>
                   <input 
                   type="text"
                   placeholder="Your Message"
                   required
                   multiple
-                  className="bg-yellow-100 h-28 px-5 rounded-[20px] md:w-[500px] sm:w-[380px]"
+                  className="bg-purple-200 h-24 px-5 rounded-[20px] md:w-[500px] w-[350px] mx-5 font-mono"
                   autoFocus
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
@@ -102,7 +94,7 @@ const Contacts = () => {
                 <input 
                 onClick={sendingEmail}
                 type="submit" 
-                className="bg-gray-300 h-10 w-28 text-center rounded-[30px]"
+                className="bg-gray-300 h-10 w-28 text-center rounded-[30px] cursor-pointer"
                 />
               </div>
             </div>
